@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body {
+		background-color: #dddddd;
+		color: rgba(0,0,0,1);
+}
+
+div#interface {
+	/*Tamanho do container criado pela <div>*/
+	width: 900px;
+	/*Cor do bloco*/
+	background-color: white;
+	/*Centralização/posicionamento do bloco, O auto é para que o navegador defina a interface*/
+	margin: -20px auto 10px auto;
+	
+	/*Cria a sobra em volta do objeto*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	
+	/*Configura a area interna do bloco, ou objeto, up-right-down-left, porem pode ser definido apenas 1 vez para todos os lados*/
+	padding: 10px; /*10px 10px 10px;*/
+}
+		
+p {
+		text-align: justify;
+		text-indent: 50px;
+}
+
+/*Configurando a img do cabeçalho, identificada com o nome = icone*/
+header#cabecalho img#icone {
+	/*posição absoluta para a pag web*/
+	position: absolute;
+	left: 900px;
+	top: 50px;
+}
+
+/*Cabecalho da pagina*/
+header#cabecalho {
+	/*Borda para fazer um divisão para separar as areas do menu*/
+	border-bottom: 1px #606060 solid;
+	/*Tamanho do linha*/
+	height: 160px;
+	/*Logomarca do site para que fique no plano de fundo, e apareca uma vez só*/
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+	/*Posição do objeto no cabecalho*/
+}
+
+/*Formatação do objeto H1 (titulos) dentro do cabecalho*/
+header#cabecalho h1 {
+	/*Fonte*/
+	font-family: Arial, sans-serif;
+	/*Tamanho*/
+	font-size: 30pt;
+	/*cor*/
+	color: #606060;
+	/*Sombreado*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	/*Espaço interno é o padding*/
+	padding: 0px;
+	/*Define as margens, que o espaço externo de baixo*/
+	margin-bottom: 0px;
+}
+
+/*Formatação do objeto H2 (titulos) dentro do cabecalho*/
+header#cabecalho h2 {
+	/*Fonte*/
+	font-family: Arial, sens-serif;
+	/*Cor*/
+	color: #888888;
+	/*Tamanho*/
+	font-size: 15pt;
+	/*Espaço interno é o padding*/
+	padding: 0px;
+	/*Define as margens, que o espaço externo de cima*/
+	margin-top: 0px;	
+}
+
+
+/* Formatação de imagens com legendas */
+	
+ figure.foto-legenda {
+	 position: relative;
+	 border: 8px solid white;
+	 box-shadow: 1px 1px 4px black;
+ }
+ 
+ figure.foto-legenda img {
+	 width: 100%;
+	 height: 100%;
+ }
+ 
+ figure.foto-legenda figcaption {
+	 opacity: 0;
+	 position: absolute;
+	 top: 0px;
+	 background-color: rgba(0,0,0,.4);
+	 color: white;
+	 Width: 100%;
+	 height: 100%;
+	 padding: 10px;
+	 box-sizing: border-box; 
+	 transition: opacity 1s;
+ }
+ 
+figure.foto-legenda:hover figcaption {
+	 opacity: 1;
+ }
+ 
+ /* Formatação do Menu */
+ 
+ /*Para que o menu flutue e fique em cima */
+ nav#menu {
+	 /*definindo o menu como bloco para flutuar na tela*/
+	 display: block;
+ }
+ 
+/* Foi dado um ID (onde coloca a # para identificar) para o menu da pagina index, o qual é descrio abaixo para configurar a formatação  */
+ nav#menu ul {
+	 /*Sumir os marcadores */
+	 list-style: none;
+	 /*Letras ficam em maiusculas */
+	 text-transform: uppercase;
+	 /*Define a posição do bloco-lista menu: a posição relativa tem limitação. Já a absoluta pode 
+	  ser usada em qualquer parte do site*/
+	  position: absolute; 
+	  /* Dai define o topo e a esquerda para o menu. */
+	  top: -20px;
+	  left: 480px;
+	  
+	 
+ }
+ /* formatação do css. Para o nav menu : os itens da lista */
+ nav#menu li{
+	 /*Os blocos são exibidos na mesma linha e não embaixo do outro */
+	 display: inline-block;
+	 /*Cor do fundo das caixas das letras */
+	 background-color: #dddddd;
+	 /*Espaços dentro das caixas de cada letra */
+	 padding: 5px;
+	 /*Controla os espaços fora das letras */
+	 margin: 2px;
+	 /*Tempo para a mudança de cor ao colocar o mouse no menu*/
+	 transition: background-color 1s;
+	 
+ }
+
+ 
+ /*Efeito para quando mover o mouse no menu*/
+ nav#menu li:hover {
+	 /*Coloca sombra no menu*/
+	 background-color: #606060;	 
+ }
+ 
+ 
+ /*Muda a formatação do link*/
+ nav#menu a {
+	 /*Define a cor do link para preo*/
+	 color: #000000;
+	 /*Remove o sublinhado das letras*/
+	 text-decoration: none;
+ }
+ 
+ /*Define a formatação o colocar o mouse*/
+ nav#menu a:hover{
+	 /*Muda a cor da fonte para branco*/
+	 color:#ffffff;
+	 /*Coloca o sublinahdo ao passar o mouse*/
+	 //text-decoration: underline;
+ }
+ 
+  
+ nav#menu h1{
+	 /*Não mostra o conteudo do H1 na pagina, apenas no codigo-fonte*/
+	 display: none;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
