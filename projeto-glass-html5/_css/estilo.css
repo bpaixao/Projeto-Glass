@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*importação da fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/*Define a fonte da pagina pelo arquivo, caso não tenha o propio css irá instalar e mostrar no browser*/
+@font-face {
+	/*Nome do objeto*/
+	font-family: 'FonteLogo';
+	/*Local do arquivo de fonte*/
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
 		background-color: #dddddd;
@@ -47,7 +56,7 @@ header#cabecalho {
 /*Formatação do objeto H1 (titulos) dentro do cabecalho*/
 header#cabecalho h1 {
 	/*Fonte*/
-	font-family: Arial, sans-serif;
+	font-family: 'FonteLogo', sans-serif;
 	/*Tamanho*/
 	font-size: 30pt;
 	/*cor*/
@@ -63,7 +72,7 @@ header#cabecalho h1 {
 /*Formatação do objeto H2 (titulos) dentro do cabecalho*/
 header#cabecalho h2 {
 	/*Fonte*/
-	font-family: Arial, sens-serif;
+	font-family: 'Titillium Web', sans-serif;
 	/*Cor*/
 	color: #888888;
 	/*Tamanho*/
@@ -71,7 +80,7 @@ header#cabecalho h2 {
 	/*Espaço interno é o padding*/
 	padding: 0px;
 	/*Define as margens, que o espaço externo de cima*/
-	margin-top: 0px;	
+	margin-top: -1px;	
 }
 
 
