@@ -182,9 +182,43 @@ figure.foto-legenda:hover figcaption {
 	 display: none;
  }
  
+ /*Determina a sessão que vai poder ter arqtigos, parte principal do site*/
+ section#corpo {
+	 /*Coloca em um bloco*/
+	 display: block;
+	 /*define tamanho*/
+	 width: 520px;
+	 /*Faz com que os blocos da sesão flutue do lado esquerdo da tela*/
+	 float: left;
+	 /*coloca a borda de divisão*/
+	 border-right: 1px solid #606060 ;
+	 /*evita que a borda fique colada no texto*/
+	 padding-right: 15px;
+ }
  
+ /*determina um conteudo periferico, que estão relacionado ao principal*/
+ aside#lateral {
+	 /*Coloca em um bloco*/
+	 display: block;
+	 /*define tamanho*/
+	 width: 350px;
+	 /*Faz com que os blocos flutue do lado direto da tela*/
+	 float: right;
+ }
  
- 
+ /*Configura o rodape da pagina, para que o conteudo não fique vazando*/
+ footer#rodape {
+	 /*Faz com o que o conteudo seja mostrado fora dessa divisão*/
+	 clear: both;
+	/**borda do footer*/
+	 border-top: 1px solid #606060;
+ }
+
+ /*para que  cony=teudo fique centralizado*/
+footer#rodape p {
+	/*Centraliza o texto*/
+	text-align: center;
+}
  
  
  
