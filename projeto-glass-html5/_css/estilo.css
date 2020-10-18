@@ -14,6 +14,23 @@ body {
 		color: rgba(0,0,0,1);
 }
 
+
+/* colocando borda na tabela */
+table#tabelaspec {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Formatando cada linha da tabela*/
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+
+}
+
+
 div#interface {
 	/*Tamanho do container criado pela <div>*/
 	width: 900px;
