@@ -10,6 +10,7 @@
 }
 
 body {
+		font-family: Arial, sans-serif;
 		background-color: #dddddd;
 		color: rgba(0,0,0,1);
 }
@@ -27,9 +28,40 @@ table#tabelaspec {
 table#tabelaspec td {
 	border: 1px solid #606060;
 	padding: 10px;
-
+	text-align: center;
+	vertical-align: middle;
 }
 
+/*Formatação da celula da tabela*/
+table#tabelaspec td.ce {
+	/*cor da celula*/
+	color: #ffffff;
+	/*cor de fundo*/
+	background-color: #606060;
+	/*texto no top da celula*/
+	vertical-align: top;
+	/*texto em negrito*/
+	font-weight: bold ;
+	text-align: right;
+}
+
+table#tabelaspec td.cd {
+	background-color: #cecece;
+}
+
+table#tabelaspec caption {
+	color: #888888;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: black;
+	font-size:  8pt;
+	margin-top: 10px;
+}
 
 div#interface {
 	/*Tamanho do container criado pela <div>*/
@@ -49,6 +81,17 @@ div#interface {
 p {
 		text-align: justify;
 		text-indent: 50px;
+}
+
+/*Edição do link*/
+a {
+	color: #606060;
+	/*Sem o sublinhado*/
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /*Configurando a img do cabeçalho, identificada com o nome = icone*/
@@ -204,7 +247,7 @@ figure.foto-legenda:hover figcaption {
 	 /*Coloca em um bloco*/
 	 display: block;
 	 /*define tamanho*/
-	 width: 520px;
+	 width: 500px;
 	 /*Faz com que os blocos da sesão flutue do lado esquerdo da tela*/
 	 float: left;
 	 /*coloca a borda de divisão*/
@@ -212,6 +255,41 @@ figure.foto-legenda:hover figcaption {
 	 /*evita que a borda fique colada no texto*/
 	 padding-right: 15px;
  }
+
+ article#noticia-principal h2{
+	 font-size: 14pt;
+	 color: #606060;
+	 background-color: #dddddd;
+	 padding: 5px 0px 5px 10px;
+	 margin: 10px 0px 10px 0px;
+
+ }
+
+ header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+ }
+
+ header#cabecalho-artigo h2{
+	 font-size: 13pt;
+	 color: #cecece;
+	 background-color: #ffffff;
+	 margin: 0px;
+
+}
+
+header#cabecalho-artigo h3{
+	 font-size: 12px;
+	 color: #606060;
+
+}
+/*tudo que for class="direita"*/
+.direita {
+	text-align: right;
+}
+
  
  /*determina um conteudo periferico, que estão relacionado ao principal*/
  aside#lateral {
@@ -221,7 +299,26 @@ figure.foto-legenda:hover figcaption {
 	 width: 350px;
 	 /*Faz com que os blocos flutue do lado direto da tela*/
 	 float: right;
+	 background-color: #dddddd;
+	 padding: 10px;
+	 margin-top: 10px;;
+	 box-shadow: 2px 2px 2px rgba(0,0,0,.5);
  }
+
+ /*Formatação do aside (texto ao lado)*/
+ aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+ }
+
+ aside#lateral h2{
+	 background-color: #606060;
+	 font-size: 15pt;
+	 color: #ffffff;
+	 padding: 5px;
+}
  
  /*Configura o rodape da pagina, para que o conteudo não fique vazando*/
  footer#rodape {
