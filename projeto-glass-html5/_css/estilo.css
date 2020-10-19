@@ -233,7 +233,7 @@ figure.foto-legenda:hover figcaption {
 	 /*Muda a cor da fonte para branco*/
 	 color:#ffffff;
 	 /*Coloca o sublinahdo ao passar o mouse*/
-	 //text-decoration: underline;
+	 text-decoration: underline;
  }
  
   
