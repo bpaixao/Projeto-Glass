@@ -5,7 +5,8 @@
 	<meta charset="UTF-8"/> 
 	<title> Tudo sobre Google Glass </title>
 	
-	<link rel="stylesheet" href="_css/estilo.css"/> 	
+    <link rel="stylesheet" href="_css/estilo.css"/> 
+    <link rel="stylesheet" href="_css/form.css"/> 	
 </head>
 
 <script src="_javascript/funcoes.js"></script>
@@ -20,7 +21,7 @@
 	<h2> A revolução do Google está chegando </h2>
 	</hgroup>
 
-	<img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+	<img id="icone" src="_imagens/contato.png">
 
 <nav id="menu">
 
@@ -39,38 +40,54 @@
 </nav>
 </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<section id="corpo-full">
+	<article id="noticia-principal"> 
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3> Glass > Multimídia</h3>
+				<h1>Sons e Vídeos</h1>
+				<h2> por Beatriz Paixão </h2>
+				<h3 class="direita"> Atualizado em 01/Nov/2020</h3>
+			</hgroup>
+		</header>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>  
+<fieldset id="usuario">
+    <legend> Identificação do Usuário </legend>
+    <p>Nome: </p>
+    <p>Senha: </p>
+    <p>E-mail: </p>
+    <fieldset id="sexo"> <legend>Sexo</legend>
+    - Masculino
+    - Feminino
+    </fieldset>
+    <p>Data de Nascimento:</p>
+</fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+<fieldset id="endereco"> <legend> Endereço do Usuário </legend>
+    <p>Logradouro:</p>
+    <p>Número:</p>
+    <p>Estado:</p>
+    <p>Cidade:</p>
+</fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+<fieldset id="mensagem"> <legend> Mensagem do Usuário </legend>
+    <p>Grau de Urgência:</p>
+    <p>Mensagem: </p>
+</fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
+<fieldset id="pedido"> <legend> Quero um Google Glass </legend>
+Gostaria de adquirir um Google Glass quando disponível
+    <p>Cor: </p>
+    <p> Quantidade: </p>
+    <p>Preço Total: R$ </p>
+</fieldset>
 
 [BOTÃO ENVIAR]
+</form>  
+
+</article>	
+</section>
 
 <footer id="rodape">
     <p> Copyright &copy; 2013 - by Gustavo Guanabara <br/> 
